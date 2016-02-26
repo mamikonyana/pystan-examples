@@ -2,12 +2,12 @@ from pystan import StanModel
 import matplotlib.pyplot as pyplot
 import numpy as np
 
-x_data = 100 * np.random.random(20)
+x_data = 100 * np.random.random(50)
 y_data = 0.7 * x_data + 13
 N = len(x_data)
 
 # Introduce noise
-x_data = np.random.normal(x_data, 9)
+x_data = np.random.normal(x_data, 7)
 y_data = np.random.normal(y_data, 8)
 
 # plot the data
